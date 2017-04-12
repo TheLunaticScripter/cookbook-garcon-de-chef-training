@@ -19,13 +19,14 @@ lint = "chef exec cookstyle"
 # by default. If you plan to share this cookbook you should remove
 # '-t ~supermarket' below to enable supermarket rules.
 syntax = "chef exec foodcritic . --exclude spec -f any -t ~supermarket"
-provision = "chef exec kitchen create"
-deploy = "chef exec kitchen converge"
-smoke = "chef exec kitchen verify"
+provision = "echo skipping"
+deploy = "echo skipping"
+smoke = "echo skipping"
 # The functional phase is optional, you can define it by uncommenting
 # the line below and running the command: `delivery local functional`
 # functional = ""
-cleanup = "chef exec kitchen destroy"
+cleanup = "echo skipping"
+functional = "echo skipping"
 
 # Remote project.toml file
 #

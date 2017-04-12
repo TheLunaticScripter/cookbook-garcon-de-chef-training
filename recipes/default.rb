@@ -8,7 +8,7 @@
 
 package 'unzip'
 
-remote_file '/home/ubuntu/terraform.zip' do
+remote_file "#{Chef::Config[:file_cache_path]}/terraform.zip" do
   source node['cookbook-garcon-de-chef-training']['terraform_url']
   owner 'root'
   group 'root'
@@ -16,7 +16,7 @@ remote_file '/home/ubuntu/terraform.zip' do
 end
 
 execute 'unzip_terraform' do
-  command 'unzip -q -o /home/ubuntu/terraform.zip -d /usr/local/bin'
+  command "unzip -q -o #{Chef::Config[:file_cache_path]}/terraform.zip -d /usr/local/bin"
   action :run
   not_if { File.exist?('/usr/local/bin/terraform') }
 end
