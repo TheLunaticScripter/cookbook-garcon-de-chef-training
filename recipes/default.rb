@@ -22,3 +22,5 @@ execute 'unzip_terraform' do
 end
 
 package 'ruby'
+
+package 'awscli'

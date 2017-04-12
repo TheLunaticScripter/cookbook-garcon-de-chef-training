@@ -1,6 +1,6 @@
 # cookbook-garcon-de-chef-training
 
-Cookbook to install Garcon De Chef Training tool and dependencies by Jerry Aldrich https://github.com/TheLunaticScripter/garcon-de-chef-training
+Cookbook to install Garcon De Chef Training tool and dependencies by Jerry Aldrich https://github.com/jerryaldrichiii/garcon-de-chef-training
 ================================================================================================================================================
 
 [![BuildStatus](https://travis-ci.org/TheLunaticScripter/cookbook-garcon-de-chef-training.svg?branch=master)](https://travis-ci.org/TheLunaticScripter/cookbook-garcon-de-chef-training)
